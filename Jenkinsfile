@@ -4,7 +4,6 @@ pipeline {
         stage('my Build') {
             steps {
                 sh 'ls'
-                sh "echo ${BUILD_VERSION}"
                 sh 'docker build -t tomcat_build:${BUILD_VERSION} --build-arg BUILD_VERSION=${BUILD_VERSION} .'
                 sh 'helm package ./helm/tomcat --version=${BUILD_VERSION}'
             }
