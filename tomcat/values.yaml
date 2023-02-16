@@ -1,13 +1,12 @@
-deployment_name: tomcat
-replicas: 2
-selector_label: tomcat
-docker_reg_name: madhusudhanpk
-docker_repo_name: tomcat
-tag_name: 1.1
-port_name: tomcat
-target_port: 8080
-port: 8080
+deployment_name:
+replicas: 
+selector_label: 
+docker_reg_name: 
+docker_repo_name: 
+tag_name:
+port_name: 
+target_port: 
+port: 
 favorite:
-  drink: coffee
-  food: pizza
-
+  drink: 
+  food: 
