@@ -14,4 +14,4 @@ spec:
             service:
               name: {{ .Values.deployment_name }}
               port:
-                number: {{ .Values.port_name }}
+                number: {{ .Values.port }}
