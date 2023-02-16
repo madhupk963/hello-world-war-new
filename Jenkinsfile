@@ -20,7 +20,7 @@ pipeline {
         } 
         stage( 'my deploy' ) {
         agent {label 'publish'} 
-            steps {
+            steps { 
                sh 'helm repo add helm https://madhuhelm.jfrog.io/artifactory/api/helm/helm --username madhu050963@gmail.com --password cmVmdGtuOjAxOjE3MDc5OTQ1MDA6NXNDZFcwaXJlYktaZmdMNnFCT3V5TzUzN3VC'
                sh 'helm repo update'
                sh 'helm repo list'
