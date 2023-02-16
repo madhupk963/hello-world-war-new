@@ -15,6 +15,7 @@ pipeline {
                 sh "docker login -u ${env.DockerhubUser} -p ${env.DockerhubPassword}"
                 sh 'docker tag tomcat_build:${BUILD_VERSION} madhusudhanpk/tomcat:${BUILD_VERSION}'
                 sh 'docker push madhusudhanpk/tomcat:${BUILD_VERSION}'
+                }
             }
         } 
         stage( 'my deploy' ) {
